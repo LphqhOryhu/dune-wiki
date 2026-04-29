@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#1a1610"/>
+  <rect width="512" height="512" rx="80" fill="url(#sand)"/>
+  <defs>
+    <radialGradient id="sand" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#2a2010"/>
+      <stop offset="100%" stop-color="#0d0b08"/>
+    </radialGradient>
+  </defs>
+  <!-- Outer diamond frame -->
+  <polygon points="256,60 452,256 256,452 60,256" fill="none" stroke="#3a3020" stroke-width="3"/>
+  <!-- Inner decorative ring -->
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#7a5518" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <!-- Central star ✦ -->
+  <path d="M256,130 L270,240 L380,256 L270,272 L256,382 L242,272 L132,256 L242,240 Z"
+        fill="#c8922a" opacity="0.95"/>
+  <!-- Inner star highlight -->
+  <path d="M256,185 L264,244 L323,256 L264,268 L256,327 L248,268 L189,256 L248,244 Z"
+        fill="#f0c060" opacity="0.5"/>
+  <!-- Corner dots -->
+  <circle cx="256" cy="90" r="5" fill="#7a5518"/>
+  <circle cx="422" cy="256" r="5" fill="#7a5518"/>
+  <circle cx="256" cy="422" r="5" fill="#7a5518"/>
+  <circle cx="90" cy="256" r="5" fill="#7a5518"/>
+  <!-- Text -->
+  <text x="256" y="480" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="#8a7a5a" letter-spacing="6">DUNE</text>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "Dune Wiki",
+  "short_name": "Dune Wiki",
+  "description": "Encyclopédie personnelle de l'univers Dune",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d0b08",
+  "theme_color": "#c8922a",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
