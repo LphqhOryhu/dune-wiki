@@ -9,6 +9,7 @@ window.DuneWiki.Store = (function() {
   }
   function _save(pages) {
     localStorage.setItem(KEY, JSON.stringify(pages));
+    if (window.DuneWiki.Sync) window.DuneWiki.Sync.push(pages);
   }
 
   function generateId() {

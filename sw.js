@@ -1,4 +1,4 @@
-const CACHE = 'dune-wiki-v1';
+const CACHE = 'dune-wiki-v2';
 
 const ASSETS = [
   './',
@@ -19,6 +19,8 @@ const ASSETS = [
   './pages/category.js',
   './pages/timeline.js',
   './pages/search.js',
+  './pages/settings.js',
+  './sync.js',
   './icons/icon.svg',
   'https://cdn.quilljs.com/1.3.7/quill.snow.css',
   'https://cdn.quilljs.com/1.3.7/quill.min.js'

@@ -22,6 +22,7 @@ window.DuneWiki.Router = (function() {
     if (segments[0] === 'category' && segments[1]) return { route: 'category', params: { type: segments[1] } };
     if (segments[0] === 'timeline')                return { route: 'timeline', params };
     if (segments[0] === 'search')                  return { route: 'search',   params };
+    if (segments[0] === 'settings')                return { route: 'settings', params };
     return { route: 'home', params };
   }
 

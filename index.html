@@ -13,6 +13,22 @@
   <meta name="apple-mobile-web-app-title" content="Dune Wiki">
   <link rel="apple-touch-icon" href="icons/icon.svg">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .sync-indicator {
+      cursor: pointer;
+      font-size: 1.1rem;
+      padding: .15rem .3rem;
+      border-radius: 50%;
+      transition: color .2s;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .sync-ok   { color: #4caf50; }
+    .sync-busy { color: var(--accent); animation: spin .8s linear infinite; display:inline-block; }
+    .sync-err  { color: var(--danger); }
+    .sync-off  { color: var(--muted); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
   <!-- Quill rich text editor -->
   <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
   <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
@@ -24,6 +40,7 @@
   <!-- Load order: dependencies first -->
   <script src="data/schema.js"></script>
   <script src="store.js"></script>
+  <script src="sync.js"></script>
   <script src="router.js"></script>
   <script src="components/navbar.js"></script>
   <script src="components/infobox.js"></script>
@@ -35,6 +52,7 @@
   <script src="pages/category.js"></script>
   <script src="pages/timeline.js"></script>
   <script src="pages/search.js"></script>
+  <script src="pages/settings.js"></script>
   <script src="app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {

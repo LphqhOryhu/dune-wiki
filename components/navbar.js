@@ -24,6 +24,7 @@ window.DuneWiki.Navbar = (function() {
           <input type="text" id="navbar-search-input" placeholder="Rechercher…" />
           <button id="navbar-search-btn" class="btn-primary">Chercher</button>
         </div>
+        <span id="sync-indicator" class="sync-indicator sync-off" title="Sync">○</span>
       </nav>`;
 
     const toggle = container.querySelector('#cat-toggle');
@@ -33,6 +34,8 @@ window.DuneWiki.Navbar = (function() {
       menu.classList.toggle('open');
     });
     document.addEventListener('click', () => menu.classList.remove('open'));
+
+    window.DuneWiki.Sync.bindIndicator(container.querySelector('#sync-indicator'));
 
     const searchInput = container.querySelector('#navbar-search-input');
     const searchBtn   = container.querySelector('#navbar-search-btn');
